@@ -7,8 +7,8 @@ public class FindInMountainArray {
     //this method for call other algorithms;
     public static int search(int[] arr, int target){
         int peak = findPeakElement(arr);
-        int checksInAscending = orderAgnosticBS(arr,target,0,peak);
-        if(checksInAscending != -1) return checksInAscending;
+        int checksIsAscending = orderAgnosticBS(arr,target,0,peak);
+        if(checksIsAscending != -1) return checksInAscending;
         return orderAgnosticBS(arr,target,peak+1,arr.length-1);
     }
     // This algorithm to find the peak element in the mountain array;
